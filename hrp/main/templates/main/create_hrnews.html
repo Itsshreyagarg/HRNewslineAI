@@ -1,0 +1,69 @@
+{% extends 'main/base.html' %}
+{% block title %} Enter the HR News Headline {% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+    body {
+        background-image: url("https://img.stablecog.com/insecure/256w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vYjYzNjg0ODUtOWYwMy00YTczLWJlMGMtMGNmYzFmN2Y1OTc3LmpwZWc.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+    }
+
+    form {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 100px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .btn-success {
+        background-color: #333; /* Change background color to dark gray */
+        border-color: #333; /* Change border color to dark gray */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-success:hover {
+        background-color: #555; /* Darken hover background color */
+        border-color: #555; /* Darken hover border color */
+    }
+
+    /* Style form fields */
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    /* Style form label */
+    label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+    }
+</style>
+
+<form method="post">
+    {% csrf_token %}
+
+    {{ form|crispy }}
+
+    <button type="submit" class="btn btn-success">Submit the HR Announcement</button>
+</form>
+{% endblock %}
