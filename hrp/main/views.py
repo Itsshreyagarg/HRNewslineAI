@@ -92,7 +92,7 @@ class RegisterAPI(generics.GenericAPIView):
             "token": token.key
         })
 
-# API view for user login
+
 class LoginAPI(generics.GenericAPIView):
     serializer_class = LoginSerializer
 
@@ -114,27 +114,7 @@ class LoginAPI(generics.GenericAPIView):
 # def home(request):
 #     posts = Post.objects.all()
 #
-#     #categorize existing announcements
-#     categorized_posts = []
-#     for post in posts:
-#         category = predict_category(post.hr_newsline)
-#         categorized_posts.append({
-#             'id': post.id,
-#             'hr_newsline': post.hr_newsline,
-#             'category': category,
-#             'user_name': post.user_name,
-#             'datetime': post.datetime
-#         })
-#
-#     if request.method == "POST":
-#         post_id = request.POST.get("post-id")
-#         post = Post.objects.filter(id=post_id).first()
-#         if post and post.user_name == request.user:
-#             post.delete()
-#
-#     return render(request, 'main/home.html', {'posts': categorized_posts})
-
-
+#     #categorize existing announceme
 @login_required
 def home(request):
     posts = Post.objects.all()

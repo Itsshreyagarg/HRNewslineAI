@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate
 class HR(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ["user_name", "hr_newsline", "datetime"]
+        fields = ["user_name", "hr_newsline", "datetime", "predicted_category"]
 
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
