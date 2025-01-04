@@ -109,8 +109,8 @@ Content-Type: application/json
 ```
 
 ## Contact
-For any questions or inquiries, please contact the project maintainers at shreya.garg754@gmail.com.
-
-
-
+For any questions or inquiries, please contact the project maintainer:
+- Name: Shreya Garg
+- Email: shreyagarg754@gmail.com
+- GitHub: Itsshreyagarg
 
