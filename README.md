@@ -109,7 +109,7 @@ Content-Type: application/json
 ```
 
 ## Contact
-For any questions or inquiries, please contact the project maintainers at shreya.garg@stag-ai.com
+For any questions or inquiries, please contact the project maintainers at shreya.garg754@gmail.com.
 
 
 
